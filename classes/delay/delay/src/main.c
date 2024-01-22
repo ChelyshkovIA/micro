@@ -15,11 +15,11 @@ void mark_blue() {
 
 void blink(int amount) {
 	for (int i = 0; i < amount; i++) {
-		_delay_ms(500);
+		_delay_ms();
 		fade_all();
-		_delay_ms(500);
+		_delay_ms();
 		mark_blue();
-		_delay_ms(500);
+		_delay_ms();
 		mark_green();
 	}
 }
